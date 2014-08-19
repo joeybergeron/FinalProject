@@ -1,5 +1,4 @@
 /**********FONTS**********/
-@import url(http://fonts.googleapis.com/css?family=Raleway:100,200,300);
 @font-face {
 	font-family:"Pacifico Regular";
 	src:url("../fonts/Pacifico.eot") format("eot"),
@@ -9,47 +8,23 @@
 	font-weight:normal;
 	font-style:normal;
 }
-@font-face {
-    font-family: 'Gobold High Bold Regular';
-    src: url('../fonts/Gobold_High_Bold.eot');
-    src: url('../fonts/Gobold_High_Bold.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/Gobold_High_Bold.woff') format('woff'),
-         url('../fonts/Gobold_High_Bold.ttf') format('truetype'),
-         url('../fonts/Gobold_High_Bold.svg#Gobold-High-Bold-Regular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Gobold Hollow Regular';
-    src: url('../fonts/Gobold_Hollow.eot');
-    src: url('../fonts/Gobold_Hollow.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/Gobold_Hollow.woff') format('woff'),
-         url('../fonts/Gobold_Hollow.ttf') format('truetype'),
-         url('../fonts/Gobold_Hollow.svg#Gobold-Hollow-Regular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-/**********COLORS**********
-//	fuzzy wuzzy - rgb(203, 108, 104)
-// 	pastel purple - rgb(177, 155, 219)
-//	tropical blue - rgb(172, 201, 231)
-//	moss - rgb(178, 218, 169)
-//	blond - rgb(248, 238, 194)
-
-//	choco - rgb(94, 60, 62)
-//  whitesmoke - rgb(245,245,245)
-//	cruise - rgb(181, 219, 213)
-// 	morning glory - rgb(157, 206, 200)
-****************************/
+/**********COLORS*********
+// bunting - rgb(46, 51, 70)
+// valhalla - rgb(39, 44, 61)
+// mariner - rgb(70, 99, 159)
+// flamingo - rgb(233, 93, 81)
+*****************************/
 *, *:before, *:after {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     -o-box-sizing: border-box;
     box-sizing: border-box;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    -webkit-font-smoothing: antialiased;
 }
 /**********HEADER**********/
 body {
-	background-color: rgb(229, 217, 208); 
+	background-color: rgb(245, 245, 245); 
 }
 .title-block h1 {
 	padding: 80px 0px;
@@ -57,88 +32,75 @@ body {
 	font-size: 7em;
 	margin-bottom: 0px;	
 	color: rgb(245,245,245);
-	text-shadow: 5px 5px 0px rgb(94, 60, 62);
+	text-shadow: 5px 5px 0px rgb(70, 99, 159);
 }
 .title-block h3 {
 	font-size: 1.5em;
+	font-weight: 200;
+	color: rgb(245,245,245);
 	margin-top: -60px;
-	padding: 30px 0px 60px 0px;
-	font-family: 'Raleway', sans-serif;
+	padding: 30px 0px 160px 0px;
 }
 .title-block{
 	text-align: center;
-	background-color: rgb(157, 206, 200);
-	background-image: url(http://www.transparenttextures.com/patterns/crisp-paper-ruffles.png);
+	background-color: rgb(39, 44, 61);
 }
 .pre-nav {
 	text-align: center;
 	padding: 10px;
 	margin: 0px;
-	background: rgb(229, 217, 208);
+	background: rgb(46, 51, 70);
+	color: rgb(245,245,245);
 }
-.pre-nav li:nth-child(2) {
-	font-size: 3em;
-	text-align: left;
-	text-transform: uppercase;
+.pre-nav p {
+	margin: 0px;
 }
-.pre-nav .subscribe {
-	display: inline-block;
-	font-size: 1rem;
-	line-height: 1.4rem;	
-	text-transform: uppercase;
-	padding-left: 10px;
-}
-.pre-nav input {
-	width: 70%;
-	line-height: 2em;
-	font-size: 1em;
-	font-family: 'Helvetica', san-serif;
+.pre-nav img {
+	vertical-align: middle;
+	padding: 0px 5px;
 }
 .pre-nav button {
-	padding: 6.3px 10px;
-	border: 0px;
-	font-family: 'Helvetica', san-serif;
+	display: inline-block;
+	margin-left: 20px;
+	padding: 5px 20px;
+	border: 1px solid rgb(245,245,245);
 	color: rgb(245,245,245);
-	background-color: rgb(94, 60, 62);
+	background: rgb(46, 51, 70);	
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-webkit-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	outline: 0px;
 }
-.neon {
-	font-size: 3em;
-	color: rgb(203, 108, 104);
-	font-family:"Pacifico Regular";
-	text-shadow: rgb(245, 245, 245) 0px 0px 2px;
+.pre-nav button:hover {
+	background-color: rgb(70, 99, 159);
 }
 .main-nav {
 	text-align: center;
 	padding: 0px;
 	margin:	0px;
 	font-size: 0px;
-	background-color: rgb(94, 60, 62);
+	background-color: rgb(70, 99, 159);
 }
 .main-nav li {
 	display: inline-block;
-	padding: 40px 10px;
-	width: 15%;
+	padding: 20px 10px 0px 10px;
 }
 .main-nav a {
 	text-transform: lowercase;
 	text-decoration: none;
 	font-size: 2.5rem;
-    font-family: 'Gobold Hollow Regular';
+	font-weight: 200;
 	color: rgb(245,245,245);
 	text-shadow: rgb(94, 60, 62) 0px 0px 1px;
 }
-.plan, .polish, .code, .release, .upkeep {
-	background-color: rgb(94, 60, 62);
+.hot-n-fresh, .plan, .polish, .code, .release, .upkeep {
+	background-color: rgb(70, 99, 159);
 }
-.plan:hover {
+.hot-n-fresh:hover, .plan:hover, .polish:hover, .code:hover, .release:hover, .upkeep:hover {
 	position: relative;
-	background: rgb(203, 108, 104);
-	color: rgb(94, 60, 62);
 }
-.plan:hover a {
-	color: rgb(94, 60, 62);	
-}
-.plan:hover:after {
+.hot-n-fresh:hover:after, .plan:hover:after, .polish:hover:after, .code:hover:after, .release:hover:after, .upkeep:hover:after {
 	top: 100%;
 	left: 50%;
 	border: solid transparent;
@@ -148,96 +110,9 @@ body {
 	position: absolute;
 	pointer-events: none;
 	border-color: rgba(157, 206, 200, 0);
-	border-top-color: rgb(203, 108, 104);
+	border-top-color: rgb(70, 99, 159);
 	border-width: 30px;
 	margin-left: -30px;	
-}
-.polish:hover {
-	position: relative;
-	background: rgb(177, 155, 219);
-	color: rgb(94, 60, 62);	
-}
-.polish:hover a {
-	color: rgb(94, 60, 62);	
-}
-.polish:hover:after {
-	top: 100%;
-	left: 50%;
-	border: solid transparent;
-	content: " ";
-	height: 0;
-	width: 0;
-	position: absolute;
-	pointer-events: none;
-	border-color: rgba(157, 206, 200, 0);
-	border-top-color: rgb(177, 155, 219);
-	border-width: 30px;
-	margin-left: -30px;
-}
-.code:hover {
-	position: relative;
-	background: rgb(172, 201, 231);
-	color: rgb(94, 60, 62);	
-}
-.code:hover a {
-	color: rgb(94, 60, 62);	
-}
-.code:hover:after {
-	top: 100%;
-	left: 50%;
-	border: solid transparent;
-	content: " ";
-	height: 0;
-	width: 0;
-	position: absolute;
-	pointer-events: none;
-	border-color: rgba(157, 206, 200, 0);
-	border-top-color: rgb(172, 201, 231);
-	border-width: 30px;
-	margin-left: -30px;
-}
-.release:hover {
-	position: relative;
-	background: rgb(178, 218, 169);
-	color: rgb(94, 60, 62);	
-}
-.release:hover a {
-	color: rgb(94, 60, 62);	
-}
-.release:hover:after {
-	top: 100%;
-	left: 50%;
-	border: solid transparent;
-	content: " ";
-	height: 0;
-	width: 0;
-	position: absolute;
-	pointer-events: none;
-	border-color: rgba(157, 206, 200, 0);
-	border-top-color: rgb(178, 218, 169);
-	border-width: 30px;
-	margin-left: -30px;
-}
-.upkeep:hover {
-	position: relative;
-	background: rgb(248, 238, 194);
-}
-.upkeep:hover a {
-	color: rgb(94, 60, 62);	
-}
-.upkeep:hover:after {
-	top: 100%;
-	left: 50%;
-	border: solid transparent;
-	content: " ";
-	height: 0;
-	width: 0;
-	position: absolute;
-	pointer-events: none;
-	border-color: rgba(157, 206, 200, 0);
-	border-top-color: rgb(248, 238, 194);
-	border-width: 30px;
-	margin-left: -30px;
 }
 /**********CONTENT**********/
 .content {
@@ -249,9 +124,8 @@ body {
 footer {
 	text-align: center;
 	padding: 75px 0px 100px 0px;
-	background: rgb(157, 206, 200); 
+	background: rgb(39, 44, 61); 
 	color: rgb(245,245,245);
-	background-image: url(http://www.transparenttextures.com/patterns/crisp-paper-ruffles.png);
 }
 footer a {
 	color: rgb(245,245,245);
