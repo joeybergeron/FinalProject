@@ -322,7 +322,7 @@ hr {
 .content ul {
 	list-style-type: none;
 	float: right;
-	padding-right: 1em;
+	padding-top: 10px;
 }
 .content li {
 	display: inline-block;
